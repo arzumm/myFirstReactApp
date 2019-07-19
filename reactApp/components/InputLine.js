@@ -10,8 +10,8 @@ class InputLine extends React.Component {
 	render()  {
 		return (
 		<div> 
-			<input type = "text " name = "todoItem" placeholder = "Enter a todo item" value = ""/> 
-			<input type = 'submit' value = 'Submit'/> 
+			<input type = "text" name = "todoItem" placeholder = "Enter a todo item" value = ""/> 
+			<input type = 'submit' value = 'Submit' onClick = {() => this.props.submit('sleep')}/> 
 		</div> 
 		); 
 	}
