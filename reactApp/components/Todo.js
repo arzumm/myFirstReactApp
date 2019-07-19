@@ -9,7 +9,7 @@ class Todo extends React.Component {
 	render() {
 		return (
 		<li> 
-		<input type = 'submit' value = 'X'></input> 
+		<input type = 'submit' value = 'X' onClick = {this.props.xClick}></input> 
 		{this.props.completed ? (<strike> {this.props.task} </strike>) : this.props.task}
 		</li>
 		); 
